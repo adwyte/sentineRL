@@ -14,10 +14,10 @@ def load_and_resize(filename, size=(CELL_SIZE, CELL_SIZE)):
     img = pygame.image.load(filename).convert_alpha()
     return pygame.transform.smoothscale(img, size)
 
-ground_img = load_and_resize("Sprites/ground.png"); ground_img.set_alpha(120)
-obstacle_img = load_and_resize("Sprites/Obstacle.png")
+ground_img = load_and_resize("Sprites/base.png"); ground_img.set_alpha(120)
+obstacle_img = load_and_resize("Sprites/mountain.png")
 drone_img = load_and_resize("Sprites/drone.png")
-bandit_img = load_and_resize("Sprites/bandit.png")
+bandit_img = load_and_resize("Sprites/camp.png")
 
 blue_flag_img = load_and_resize("Sprites/BlueFlag.png", size=(24, 24))
 red_flag_img = load_and_resize("Sprites/RedFlag.png", size=(24, 24))
